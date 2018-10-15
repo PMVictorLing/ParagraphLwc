@@ -1,7 +1,5 @@
 package com.ztnhlwc.paragraphlwc;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -9,21 +7,33 @@ import android.widget.Toast;
 import com.ztnhlwc.baselibrary.ioc.OnClick;
 import com.ztnhlwc.baselibrary.ioc.ViewById;
 import com.ztnhlwc.baselibrary.ioc.ViewUtils;
+import com.ztnhlwc.framelibrary.BaseSkinActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseSkinActivity {
 
 
     @ViewById(R.id.tv_test)
     TextView tvTest;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void initData() {
+
+    }
+
+    @Override
+    protected void initTitle() {
+
+    }
+
+    @Override
+    protected void initView() {
+
+    }
+
+    @Override
+    protected void setContentView() {
         setContentView(R.layout.activity_main);
-
         ViewUtils.inJect(this);
-
-        tvTest.setText("ioc注解");
 
     }
 
