@@ -28,4 +28,6 @@ dependencies {
     //    implementation 'org.xutils:xutils:3.5.0'
     implementation project(':baselibrary')
     implementation project(':framelibrary')
+
+    implementation 'com.alipay.euler:andfix:0.5.0@aar'//阿里热修复
 }
